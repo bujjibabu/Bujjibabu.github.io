@@ -1,0 +1,15 @@
+.cards-view {
+  padding-left: 30px;
+  padding-right: 30px;
+  .heading {
+    margin-top: 10px;
+    .label {
+      display: inline-block;
+    }
+    .btns {
+      display: inline-block;
+      float: right;
+      margin-top: -7px;
+    }
+  }
+}

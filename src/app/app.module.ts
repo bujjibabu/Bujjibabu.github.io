@@ -7,6 +7,7 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CradsComponent } from './crads/crads.component';
+import { CardService } from './services/card.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CradsComponent } from './crads/crads.component';
     AppRoutingModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
