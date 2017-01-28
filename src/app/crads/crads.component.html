@@ -12,10 +12,9 @@
       <a md-raised-button (click)="tryAgain()">Try Again</a>
     </span>
   </md-card>
-
   <div class="cards">
-  	<img *ngIf="cardsData" src="{{cardsData[0].image}}">
-  	<img *ngIf="showOtherCard" src="{{cardsData[1].image}}">
-	<md-progress-circle mode="indeterminate" color="warn" *ngIf="!cardsData"></md-progress-circle>
+    <img *ngIf="cardsData" src="{{cardsData[0].image}}">
+    <img *ngIf="showOtherCard" src="{{cardsData[1].image}}">
+    <md-progress-circle mode="indeterminate" color="warn" *ngIf="!cardsData"></md-progress-circle>
   </div>
 </div>

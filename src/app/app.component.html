@@ -1,7 +1,6 @@
 <div [class.my-dark-theme]="isDarkTheme">
   <md-toolbar>
-   <!--  <span class="logo">{{title}}</span> -->
-    <span class="logo">Logo</span>
+    <span class="logo">{{title}}</span>
     <nav md-tab-nav-bar>
       <a md-tab-link *ngFor="let link of links" [routerLink]="link.href" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
       {{link.name}}

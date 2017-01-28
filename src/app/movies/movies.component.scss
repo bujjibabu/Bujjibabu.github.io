@@ -1,0 +1,31 @@
+.movies-view {
+  padding-left: 30px;
+  padding-right: 30px;
+  .release-date {
+    font-size: 12px;
+  }
+  .cast-card {
+    width: 20%;
+    float: left;
+    md-card {
+      padding: 50px;
+      margin: 10px;
+    }
+    .profile-icon {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .details {
+      text-align: center;
+      .cast-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #063b5e;
+      }
+      .name-character {
+        font-size: 15px;
+      }
+    }
+  }
+}

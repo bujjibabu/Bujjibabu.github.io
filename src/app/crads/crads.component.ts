@@ -22,7 +22,7 @@ export class CradsComponent implements OnInit {
   	if(parseInt(this.cardsData[0].value) < parseInt(this.cardsData[1].value)) {
   		alert('You Win!')
     } else {
-    	alert('Better Luck Next Time')
+    	alert('Better Luck Next Time');
     }
     this.startGame = true;
   };
