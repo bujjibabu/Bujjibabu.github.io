@@ -1,10 +1,21 @@
 <div class="cards-view">
-  <md-card class="heading">
+  <md-card class="heading" *ngIf="!startGame">
     <span class="label"> Choose Higher or Lower </span>
     <span class="btns">
-      <a md-raised-button routerLink=".">High</a>
-       <a md-raised-button routerLink=".">Low</a>
+      <a md-raised-button (click)="highCard()">High</a>
+       <a md-raised-button (click)="lowCard()">Low</a>
     </span>
   </md-card>
-  <div>{{cards}}</div>
+  <md-card class="heading" *ngIf="startGame">
+    <span class="label"> Game </span>
+    <span class="btns">
+      <a md-raised-button (click)="tryAgain()">Try Again</a>
+    </span>
+  </md-card>
+
+  <div class="cards">
+  	<img *ngIf="cardsData" src="{{cardsData[0].image}}">
+  	<img *ngIf="showOtherCard" src="{{cardsData[1].image}}">
+	<md-progress-circle mode="indeterminate" color="warn" *ngIf="!cardsData"></md-progress-circle>
+  </div>
 </div>
