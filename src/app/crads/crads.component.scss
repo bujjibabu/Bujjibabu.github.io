@@ -1,0 +1,27 @@
+.cards-view {
+  background: url('../assets/bg.jpg');
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  height: 100vh;
+  .heading {
+    .label {
+      display: inline-block;
+    }
+    .btns {
+      display: inline-block;
+      float: right;
+      margin-top: -7px;
+    }
+  }
+  .cards {
+    background: rgba(204, 204, 204, 0.36);
+    padding: 10px 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    md-progress-circle {
+      width: 100%;
+    }
+  }
+}
