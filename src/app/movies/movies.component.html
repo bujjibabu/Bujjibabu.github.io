@@ -7,14 +7,13 @@
     <md-grid-tile [colspan]="3" [rowspan]="5" [style.background]="lightblue">
       <div>
         <h1 class="original-title">{{favoritemovieData.original_title}}
-        	<span class="release-date">( {{favoritemovieData.release_date}} )</span>
+          <span class="release-date">( {{favoritemovieData.release_date}} )</span>
         </h1>
         <h2>Overview</h2>
         <p>{{favoritemovieData.overview}}</p>
       </div>
     </md-grid-tile>
   </md-grid-list>
-
   <div *ngIf="favoritemoviecasts">
     <a *ngFor="let cast of favoritemoviecasts.cast" class="cast-card" href="https://www.themoviedb.org/person/{{cast.id}}" target="_blank">
       <md-card>
@@ -29,5 +28,4 @@
       </md-card>
     </a>
   </div>
-
 </div>
